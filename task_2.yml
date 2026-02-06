@@ -1,0 +1,35 @@
+TASK_INFO:
+  name: TASK_1
+  report: True
+
+  ohlc_rule:
+    mode: database
+    db_name: meta_data
+    table_name: future_bar_1day
+    fields:
+      code_field: code
+      datetime_field: datetime
+      high_field: high
+      low_field: low
+      close_field: close
+      open_field: open
+    start: 2025-03-01 00:00:00
+    end: 2025-03-03 00:00:00
+
+  zero_price_rule:
+    mode: database
+    db_name: meta_data
+    table_name: future_bar_1day
+    fields:
+      code_field: code
+      datetime_field: datetime
+      high_field: high
+      low_field: low
+      close_field: close
+      open_field: open
+    start: 2025-03-01 00:00:00
+    end: 2025-03-03 00:00:00
+
+
+
+
